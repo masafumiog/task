@@ -23,7 +23,6 @@ req = Net::HTTP::Get.new(url.path)
 
 res = https.request(req)
 
-
 hash = JSON.parse(res.body)
 
-puts hash.select{|a| a.include?("false")}
+puts hash.select{|completed, value| value == false }
