@@ -1,14 +1,3 @@
-# 【問題文】
-# ・言語はRubyになります
-# 【問題２：APIの利用】
-
-# 【抽出する条件】
-# completed が false の物を抽出して出力
-# ＝＝＝
-
-# あと、HashとArrayの違いを明確にすることをお勧めします。
-# 回答お待ちしてますね！
-
 require 'net/http' 
 require 'uri'
 require "json" 
