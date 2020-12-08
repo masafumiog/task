@@ -1,3 +1,6 @@
+# 【抽出する条件】
+# completed が false の物を抽出して出力
+
 require 'net/http' 
 require 'uri'
 require "json" 
@@ -14,4 +17,7 @@ res = https.request(req)
 
 hash = JSON.parse(res.body)
 
-puts hash.select{|completed, value| value == false }
+# hash.select { |k,v| puts "#{k} : #{v}"}
+
+hash.select {|k,v| puts "completed" => false}
+
