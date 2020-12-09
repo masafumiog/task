@@ -17,7 +17,7 @@ res = https.request(req)
 
 hash = JSON.parse(res.body)
 
-# hash.select { |k,v| puts "#{k} : #{v}"}
+pue = hash.select{|v| v["completed"] == false }
 
-hash.select {|k,v| puts "completed" => false}
+puts pue
 
